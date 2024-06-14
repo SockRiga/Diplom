@@ -1,0 +1,42 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+{% load static %}
+
+<style type="text/css">
+
+  .card {
+    text-align: center;
+    margin-bottom: 20px;
+    background-color: rgb(29, 29, 29);
+    color: white;
+  }
+
+
+ </style>
+
+
+
+<div class="container mt-4">
+    
+    <h2 style="text-align: center; color: white;">Новости</h2>
+    <br>
+    <div class="posts">
+        {% for statment in statments %}
+          <div class="" style="display: flex; justify-content: center">
+            <div class="card" style="max-width: 45rem;">
+                {% if statment.image %}
+                  <img src="{{ statment.image.url }}" alt="{{ statment.title }}" style="height: 22rem; width: -webkit-fill-available;">
+                {% endif %}
+                <h2 class="card-title mx-auto">{{ statment.title }}</h2>
+                <div class="card-bodyz">
+                    <p class="card-text">{{ statment.description }}</p>
+                    <p class="card-text">{{ statment.set_time }}</p>
+                </div>
+            </div>
+          </div>
+        
+        {% endfor %}
+    </div>
+</div>
+{% endblock %}

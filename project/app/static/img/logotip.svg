@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="_Слой_1" data-name="Слой 1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 100.06 100.06">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #e30613;
+      }
+
+      .cls-2 {
+        fill: none;
+        stroke: #e30613;
+        stroke-miterlimit: 10;
+        stroke-width: 7px;
+      }
+
+      .cls-3 {
+        fill: url(#_Безымянный_градиент_11);
+      }
+    </style>
+    <radialGradient id="_Безымянный_градиент_11" data-name="Безымянный градиент 11" cx="50.03" cy="50.03" fx="50.03" fy="50.03" r="50.03" gradientUnits="userSpaceOnUse">
+      <stop offset=".04" stop-color="#fff"/>
+      <stop offset=".47" stop-color="#fdde8b"/>
+      <stop offset=".84" stop-color="#fbc531"/>
+      <stop offset="1" stop-color="#fbbb0e"/>
+    </radialGradient>
+  </defs>
+  <rect class="cls-3" width="100.06" height="100.06"/>
+  <rect class="cls-2" x="40.77" y="17.84" width="17.62" height="17.62" transform="translate(-4.81 41.13) rotate(-43.17)"/>
+  <g>
+    <rect class="cls-1" x="46.73" y="51.16" width="6.56" height="34.77"/>
+    <rect class="cls-1" x="68.83" y="32.13" width="6.56" height="36.98" transform="translate(144.23 101.25) rotate(-180)"/>
+    <rect class="cls-1" x="56.82" y="29.89" width="6.56" height="31.26" transform="translate(70.41 120.21) rotate(-135)"/>
+    <rect class="cls-1" x="23.76" y="31.56" width="6.56" height="36.98"/>
+    <rect class="cls-1" x="35.77" y="29.32" width="6.56" height="31.26" transform="translate(-20.34 40.78) rotate(-45)"/>
+  </g>
+</svg>

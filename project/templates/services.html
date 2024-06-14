@@ -1,0 +1,40 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+<style>
+  .card {
+    background-color: rgb(29, 29, 29);
+    color: white;
+    text-align: center;
+  }
+
+</style>
+
+
+<br>
+  <h2 style="text-align: center; color: white;">Услуги</h2>
+<br>
+<div class="services">
+    {% for service in services %}
+    <div style="display: flex; justify-content: center; margin-bottom: 30px;">
+      <div class="card mb-3" style="max-width: 70rem;">
+        <div class="row g-0">
+          <div class="col-md-6">
+            {% if service.image %}
+                <img src="{{ service.image.url }}" alt="{{ service.title }}" class="img-fluid" style="max-height: 20rem; width: -webkit-fill-available;">
+            {% endif %}
+          </div>
+          <div class="col-md-6">
+            <div class="card-body" style="text-align: center; font-size: 1.2rem;">
+              <h5 class="card-title" style="font-size: 1.7rem;">{{ service.title }}</h2>
+              <p class="card-text">{{ service.description }}</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    {% endfor %}
+</div>
+{% endblock %}

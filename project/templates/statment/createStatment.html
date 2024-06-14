@@ -1,0 +1,21 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+
+
+
+<form method="POST" class="container mt-5" style="padding: 2rem; max-width: 30rem; border-radius: 7px; background-color: white;">
+    <h1 style="text-align: center;">Создание заявки</h1>
+    {% csrf_token %}
+    <div class="mb-3">
+        <label for="title" class="form-label">Контакты</label>
+        <input type="text" class="form-control" id="contact" required name="title" placeholder="Ваш номер телефона/почта для связи">
+    </div>
+    <div class="mb-3">
+        <label for="description" class="form-label">Описание</label>
+        <input type="text" class="form-control" id="description" required name="description" placeholder="Какими услугами вы хотите воспользоваться">
+    </div>
+    <button type="submit" class="btn btn-dark" style="width: -webkit-fill-available;">Создать</button>
+</form>
+{% endblock %}
